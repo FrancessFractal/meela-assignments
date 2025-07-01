@@ -67,3 +67,51 @@ choices than what has been made in the `/backend` directory)
 
 Remember, focus on the core "resume" functionality - that is what we are evaluating. We look forward to catching up and
 reviewing your submission!
+
+## Setup instructions
+
+### Backend
+
+I used the provided BE setup, meaning the instructions are the same. Do the following from within the `backend` directory:
+
+1. Install sqlx cli
+
+    ```sh
+    $ cargo install sqlx-cli
+    ```
+
+2. Create the database.
+
+    ```sh
+    $ sqlx db create
+    ```
+
+3. Run sql migrations
+
+    ```sh
+    $ sqlx migrate run
+    ```
+   
+4. Start the server
+
+    ```sh
+    cargo run
+    ```
+
+### Frontend
+
+I used a basic Next.js setup using `create-next-app`. From the `frontend` directory:
+
+1. Install dependencies
+
+    ```sh
+    npm install
+    ```
+
+2. Start the server
+
+    ```sh
+    npm run dev
+    ```
+
+Once running both backend and frontend, you can access the app at [http://localhost:3000](http://localhost:3000)
